@@ -29,8 +29,9 @@ function changeCheck(){
 function deleteItem(){    
     console.log(this);    
     let index = jokesArray.indexOf(this.textContent);
-    console.log(index);
-    jokesArray.splice(index-1,1);
+    console.log(index);                
+    console.log(jokesArray);
+    jokesArray.splice(index,1);         
     console.log(jokesArray);
     this.parentElement.remove();    
 }
